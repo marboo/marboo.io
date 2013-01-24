@@ -1,0 +1,8 @@
+safe: false
+pygments: true
+source: .
+destination: /Users/amoblin/Dropbox/Apps/FarBox/markbook
+markdown: redcarpet
+# enable to auto will kill your CPU
+#auto: true
+auto: false
