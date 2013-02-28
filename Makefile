@@ -1,5 +1,11 @@
+#dest=~/Dropbox/Apps/FarBox/marboo
+dest=/tmp/marboo.biz
 default:
-	jekyll . ~/Dropbox/Apps/FarBox/markbook
-	cp -r ../media ~/Dropbox/Apps/FarBox/markbook
-	cp -r ~/.MarkBook/build/bootstrap ~/Dropbox/Apps/FarBox/markbook
-	cp -r ~/.MarkBook/build/misc/markbook-doc/README.rst.html ~/Dropbox/Apps/FarBox/markbook/guide/index.html
+	cp ~/.marboo/build/misc/marboo-doc/README.rst.html guide/index.html
+	/Users/amoblin/.rvm/gems/ruby-1.9.3-p125/bin/jekyll . ${dest}
+	cp .gitignore ${dest}
+	mkdir -p ${dest}/media/{images,bg-images}
+	cp -r ../media/images/marboo ${dest}/media/images
+	cp -r ../media/bg-images/marboo* ${dest}/media/bg-images
+	cp -r ../media/css ${dest}/media
+	cp -r ~/.marboo/build/bootstrap ${dest}
