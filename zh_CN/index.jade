@@ -1,0 +1,141 @@
+!!! 5
+html
+  head
+    title  Marboo for Mac 
+    meta(charset='utf-8')
+    // Bootstrap
+    link(href='/bootstrap/css/bootstrap.min.css', rel='stylesheet', media='screen')
+    link(rel='stylesheet', href='/media/css/base.css', type='text/css')
+    link(href='/media/css/ruhoh.css', rel='stylesheet', media='screen')
+    link(href='/media/css/style.css', rel='stylesheet', media='screen')
+    link(href='/media/css/sunburst-custom.css', rel='stylesheet', media='screen')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+  body(style='background-color: transparent;')
+    .navbar
+      .navbar-inner(style='background: #F0F0D8; box-shadow: 0 0 0 0; border-bottom: 1px solid #E0E4CC;')
+        a.brand(href='/') Marboo
+        ul.nav
+          li
+            a(href='/guide/') 用户手册
+          li
+            a(href='/gallery/') 玩法
+        .nav.btn-group.pull-right
+          a.btn.btn-small.dropdown-toggle(style='margin-top: 8px; margin-right: 4px;', data-toggle='dropdown', href='#')
+            | 简体中文
+            span.caret
+          ul.dropdown-menu(role='menu')
+            li
+              a(href='/') English
+        ul.nav.social.pull-right
+          li
+            a(href='http://amoblin.marboo.biz/') 博客
+          li
+            a.twitter-follow-button(href='http://weibo.com/amoblin', data-show-count='false', data-lang='en') 微博
+          li
+            a.twitter-follow-button(href='https://twitter.com/amoblin', data-show-count='false', data-lang='en') Twitter
+          li
+            a.twitter-share-button(href='https://twitter.com/share', data-lang='en', data-url='http://marboo.biz', data-hashtags='Marboo', data-text='new markdown notes manager for the hack using OS X') Tweet
+    .container(style='position: relative; top: 50px;')
+      .content
+        div(align='center')
+        .row
+          .span8.offset2
+            h2.splash-header 还在为Evernote不支持Markdown，Git，Vim而烦恼吗？
+            p(style='margin-bottom: 20px;')
+              strong Marboo
+              | 是
+              b 最好的
+              | 平台式个人知识管理软件。
+              br
+              | 使用Marboo，你可以：记笔记，发文章，写Web页面，管理代码。而这一切，基于如下2个设计理念：
+              br
+              | 使用MVC，将内容和表现分离，使用Markdown等置标语言书写内容，用css+js写成的各种模板来做排版显示。
+              br
+              | 遵循UNIX的KISS哲学，根据用户配置，Marboo调用外部软件来完成各部分的工作：
+            | 观看演示视频
+            a(href='https://vimeo.com/58428246') @vimeo
+            | 或
+            a(href='http://v.youku.com/v_show/id_XNTA4MzgyMzQ4.html') @优酷
+        .row.splash.stripe
+          .span6.splash-message
+            .wrapper(style='padding: 20px;')
+              table.table-condensed(style='margin: 0; width: 100%;')
+                tbody
+                  tr
+                    td
+                      i.icon-ok-sign
+                      strong Markdown
+                    td
+                      | 记笔记(
+                      a(href='guide/index.html.html#markdown') 其他格式？
+                      | )
+                  tr
+                    td
+                      i.icon-ok-sign
+                      strong Vim/Emacs
+                    td 编辑内容
+                  tr
+                    td
+                      i.icon-ok-sign
+                      strong HTML
+                    td 输出模板
+                  tr
+                    td
+                      i.icon-ok-sign
+                      strong Shell Scripts
+                    td 自定义转化脚本
+                  tr
+                    td
+                      i.icon-ok-sign
+                      strong Git
+                    td 版本控制，内容同步
+                  tr
+                    td
+                      i.icon-ok-sign
+                      strong Jekyll
+                    td 发布博客
+                  tr
+                    td
+                      i.icon-ok-sign
+                      strong Make/Rake
+                    td 自动化
+                  tr
+                    td
+                      i.icon-ok-sign
+                      strong 命令行
+                    td 实时反馈命令行的操作
+                  tr
+                    td
+                      i.icon-ok-sign
+                      strong 无穷的扩展
+                    td
+                      | 参看
+                      a(href='/guide/#id45') 配置
+          .span6.splash-message
+            #themeStep1
+              a(href='gallery/')
+              img(src='/media/images/marboo/marboo-main.png')
+            .download
+              a.download-button(href='http://markbook.googlecode.com/files/Marboo_v0.5.dmg')
+                span.inner
+                  h4 Download the latest
+                  p#current-version-description v0.5 February 5th 2013
+              p.requirements OS X 10.7+
+    br
+    br
+    footer.footer(style='text-align: center; margin: 50px 0;')
+      | @2013 amoblin. 版权所有. 由
+      a(href='http://marboo.biz')  Marboo
+      | 和
+      a(href='http://twitter.github.com/bootstrap/')  Twitter Bootstrap 
+      | 强力驱动
+    script(type='text/javascript')
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37860016-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
