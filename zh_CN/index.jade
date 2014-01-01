@@ -4,14 +4,14 @@ html(xmlns:wb="http://open.weibo.com/wb")
     title  Marboo - 自由书写
     meta(charset='utf-8')
     // Bootstrap
-    link(href='/bootstrap/css/bootstrap.min.css', rel='stylesheet', media='screen')
+    link(href='/media/bootstrap/css/bootstrap.min.css', rel='stylesheet', media='screen')
     link(rel='stylesheet', href='/media/css/base.css', type='text/css')
     link(href='/media/css/ruhoh.css', rel='stylesheet', media='screen')
     link(href='/media/css/style.css', rel='stylesheet', media='screen')
     link(href='/media/css/sunburst-custom.css', rel='stylesheet', media='screen')
     script(src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=993231938", type="text/javascript", charset="utf-8")
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
-    script(src='/bootstrap/js/bootstrap.min.js')
+    script(src='/media/bootstrap/js/bootstrap.min.js')
   body(style='background-color: transparent;')
     .navbar
       .navbar-inner(style='background: #F0F0D8; box-shadow: 0 0 0 0; border-bottom: 1px solid #E0E4CC;')
@@ -21,6 +21,8 @@ html(xmlns:wb="http://open.weibo.com/wb")
             a(href='/guide/') 用户手册
           li
             a(href='/gallery/') 玩法
+          li
+            a(href='/slides/marboo-intro.remark.md.html') Marboo概览
         .nav.btn-group.pull-right
           a.btn.btn-small.dropdown-toggle(style='margin-top: 8px; margin-right: 4px;', data-toggle='dropdown', href='#')
             | 简体中文
@@ -64,7 +66,8 @@ html(xmlns:wb="http://open.weibo.com/wb")
                   tr
                     td
                       i.icon-ok-sign
-                      strong Markdown
+                      a(href='http://amoblin.marboo.biz/orgmode-cn/') Org Mode 
+                      | /Markdown
                     td
                       | 记笔记(
                       a(href='/guide/index.html#markdown') 其他格式？
@@ -72,7 +75,7 @@ html(xmlns:wb="http://open.weibo.com/wb")
                   tr
                     td
                       i.icon-ok-sign
-                      strong Vim/Emacs
+                      strong Emacs/Vim
                     td 编辑内容
                   tr
                     td
@@ -116,15 +119,15 @@ html(xmlns:wb="http://open.weibo.com/wb")
           .span6.splash-message
             #themeStep1
               a(href='gallery/')
-              img(src='/media/images/marboo/marboo-blog.png')
+              img(src='/media/images/marboo/0.6/marboo-org.png')
             .download
-              a.download-button(href='http://markbook.googlecode.com/files/Marboo_v0.6.dmg')
+              a.download-button(href='http://marboo.googlecode.com/files/Marboo_v0.6.6.dmg')
                 span.inner
                   h4 下载最新
-                  p#current-version-description v0.6 2013年3月5日
+                  p#current-version-description v0.6.6 2014年1月2日
               p.requirements OS X 10.7+
               br
-              a(href='http://markbook.googlecode.com/files/marboo_for_linux_v0.2.zip'): Marboo v0.2 for Linux
+              a(href='/i/'): Marboo Marboo跨平台Chrome插件(支持Windows，Linux，Mac)
     br
     br
     footer.footer(style='text-align: center; margin: 50px 0;')
@@ -142,3 +145,25 @@ html(xmlns:wb="http://open.weibo.com/wb")
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
+    <!-- begin olark code -->
+    script(type='text/javascript')
+        /*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+        f[z]=function(){
+        (a.s=a.s||[]).push(arguments)};var a=f[z]._={
+        },q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+        f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+        0:+new Date};a.P=function(u){
+        a.p[u]=new Date-a.p[0]};function s(){
+        a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+        hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+        return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+        b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+        b.contentWindow[g].open()}catch(w){
+        c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+        var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+        b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+        loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+        /* custom configuration goes here (www.olark.com/documentation) */
+        olark.identify('7030-323-10-6024');/*]]>*/
+        <noscript><a href="https://www.olark.com/site/7030-323-10-6024/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
+    <!-- end olark code -->
