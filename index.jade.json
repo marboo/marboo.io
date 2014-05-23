@@ -1,0 +1,29 @@
+{
+    "title": "Marboo - Organize Plain Text with Freedom",
+    "home": "Home",
+    "guide": "User Guide",
+    "gallery": "Gallery",
+    "overview": "Overview",
+    "blog": "Blog",
+    "slogon": "Freedom Writing, Perfect Viewing",
+    "subSlogon": "Make your notes beautiful.",
+    "downloadTitle": "Marboo for Mac",
+    "download": "Download",
+    "date": "v0.8 May 25th 2014",
+    "coreInfo": [{
+	"src": '/media/images/marboo/icons/editor.png',
+	"title": "With Your Favorite Text Editor",
+	"subtitle": "Support All Text Editor, such as Mou / Vim / Emacs / Sublime Text, etc.",
+	"link": "/guide/"
+    }, {
+	"src": '/media/images/marboo/icons/hash.png',
+	"title": "Markup Language Support, such as Markdown",
+	"subtitle": "Inside support Markdown、reStructuredText、Org-mode. With custom script it can support all kinds of markup language.",
+	"link": "#"
+    }, {
+	"src": '/media/images/marboo/icons/eye.png',
+	"title": "View Notes Easily",
+	"subtitle": "3-column UI, Viewing Notes, just like reading RSS in Reeder.",
+	"link": "#"
+    }]
+}

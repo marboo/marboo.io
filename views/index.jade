@@ -1,0 +1,238 @@
+doctype html
+html(lang="en" xmlns:wb="http://open.weibo.com/wb")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="description" content="")
+    meta(name="author" content="amoblin")
+    link(rel="shortcut icon" href="/media/ico/favicon.png")
+
+    // Bootstrap core CSS
+    link(href="/media/bootstrap/css/bootstrap.css" rel="stylesheet")
+
+    // Just for debugging purposes. Don't actually copy this line!
+    //[if lt IE 9]>
+      <script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script>
+    //[endif]
+
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //[if lt IE 9]
+      script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
+      script(src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js")
+    //[endif]
+
+    //Custom styles for this template
+    link(href="/media/css/carousel.css" rel="stylesheet")
+    link(href="/media/css/icons.css" rel="stylesheet")
+    title=title
+    script(src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=993231938" type="text/javascript" charset="utf-8")
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-37860016-1', 'github.com');
+      ga('send', 'pageview');
+  body
+    .navbar-wrapper
+      .container
+        .navbar.navbar-static-top(role='navigation')
+          .container
+            .navbar-header
+              button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a.navbar-brand(href='#') Marboo
+            .navbar-collapse.collapse
+              ul.nav.navbar-nav
+                li.active
+                  a(href='#') #home
+                li
+                  a(href='/guide') #guide
+                li
+                  a(href='/gallery') #gallery
+                li
+                  a(href='/slides/marboo-intro.remark.md.html') #overview
+                li
+                  a(href='http://amoblin.marboo.biz/') #blog
+                li
+                  wb:follow-button(uid='1657760362', type='gray_2')
+                    span(style='background:url(http://timg.sjs.sinajs.cn/t4/appstyle/widget/images/library/base/loading1.gif) no-repeat;height:18px;padding:0 0 2px 20px;') Loading...
+                li
+                  wb:share-button(count='y', type='icon', size='small')
+                    iframe(src='http://service.weibo.com/staticjs/weiboshare.html?url=http%3A%2F%2Fhtml2jade.org%2F&type=3&count=1&language=zh_cn&showbutton=1', width='72', height='16', frameborder='0', scrolling='no', marginheight='0')
+                li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown')
+                    | English
+                    b.caret
+                  ul.dropdown-menu
+                    li
+                      a(href='/zh_CN') 简体中文
+    //                <li class="divider"></li>
+    //                <li class="dropdown-header">Nav header</li>
+    //                <li><a href="#">Separated link</a></li>
+    //                <li><a href="#">One more separated link</a></li>
+    //   Carousel
+    #myCarousel.carousel.slide(data-ride='carousel', style='height:590px')
+      .row.featurette
+        .col-md-12(align='center')
+          h2.featurette-heading
+            | #slogon
+            span.text-muted
+          p.lead.text-muted #subSlogon
+          br
+          br
+        .col-md-7(align='center')
+          img.featurette-image.img-responsive(src='/media/images/marboo/0.6/marboo-vim-md.png', style='width:80%', alt='Generic placeholder image')
+        .col-md-5(align='center')
+          h2.featurette-heading(style='font-size:30px;margin-top:80px; margin-bottom:80px') #downloadTitle
+          a.btn.btn-default.btn-lg(href='download/Marboo_v0.7.dmg', onclick='ga("send", "event", "button", "click", "Marboo_v0.7.dmg", 1);', style='background:#428bca;width:300px')
+            h2(style='font-size:25px; font-weight:300; margin-top:10px; color:white') #download
+          br
+          p.text-muted(text-align='center') #date
+              
+    // /.carousel
+    //   Marketing messaging and featurettes
+    // Wrap the rest of the page in another container to center all the content.
+    .container.marketing
+      hr.featurette-divider(style='margin:70px 0')
+      // Three columns of text below the carousel
+      .row
+        - each item in coreInfo
+          .col-lg-4
+            img(src=src, alt='Generic placeholder image', width='60px', height='60px')
+            h2=title
+            p.text-muted=subtitle
+            p
+              a.btn.btn-default(href=link, role='button') View details »
+      // /.row
+      // START THE FEATURETTES
+      hr.featurette-divider
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading Safe
+          p.lead
+            | All note files is stored in local folder. Without Marboo, accessing the content is available. All Marboo does is responsing your operations with folder.
+        .col-md-5
+          img.featurette-image.img-responsive(src='/media/images/marboo/gifs/marboo-folder.gif', alt='Generic placeholder image')
+      hr.featurette-divider
+      .row.featurette
+        .col-md-5
+          img.featurette-image.img-responsive(src='/media/images/marboo/friends/marboo-with-dropbox.png', alt='Generic placeholder image')
+        .col-md-7
+          h2.featurette-heading
+            | Syncing with your pleasure
+            span.text-muted
+          p.lead Supporting using Dropbox or Git to sync your notes to everywhere.
+      hr.featurette-divider
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading
+            | Custom Note UI is available
+            span.text-muted
+          p.lead  Modify the main CSS file to custom the UI of all notes.
+        .col-md-5
+          img.featurette-image.img-responsive(src='/media/images/marboo/marboo-icon-theme.png', alt='Generic placeholder image')
+      hr.featurette-divider
+      .row.featurette
+        .col-md-5
+          img.featurette-image.img-responsive(src='/media/images/marboo/marboo-icon-open.png', alt='Generic placeholder image')
+        .col-md-7
+          h2.featurette-heading
+            | Sharing notes in local network
+            span.text-muted
+          p.lead
+            | Tell your friends the note link, the one in the same network can view your note.(Close Sharing? Just restart Marboo)
+      hr.featurette-divider
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading
+            | Note, Blog，All in one
+            span.text-muted
+          p.lead
+            | Using Marboo to manage files in Jekyll / Octopress / Hexo / Ghost is a smart choice. Notes, Blogs, they are the same. Post to WordPress / Ghost is available!
+        .col-md-5
+          img.featurette-image.img-responsive(src='/media/images/marboo/friends/marboo-with-jekyll.png', alt='Generic placeholder image')
+      hr.featurette-divider
+      .row.featurette
+        .col-md-5
+          img.featurette-image.img-responsive(src='/media/images/marboo/logos/pygments.png', alt='Generic placeholder image')
+        .col-md-7
+          h2.featurette-heading
+            | Mananging Codes for Coders
+            span.text-muted
+          p.lead
+            a(href='http://pygments.org/') Pygments
+            | inside. All kinds of code files can display with syntax highlight.
+      hr.featurette-divider
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading
+            | Play with GUI and CLI
+            span.text-muted
+          p.lead
+        .col-md-5
+          img.featurette-image.img-responsive(src='/media/images/marboo/gifs/marboo-terminal.gif', alt='Generic placeholder image')
+      hr.featurette-divider
+    //          <div class="row featurette" id="download">
+    //    	<div class="col-md-12">
+    //    	  <h2 class="featurette-heading">更多新特性 <span class="text-muted">即将发布</span><h2>
+    //    	      Marboo
+    //    	      <p style="text-align:center">
+    //    		<a href="http://marboo.googlecode.com/files/Marboo_v0.6.6.dmg" class="btn btn-default btn-lg">
+    //    		  Download Marboo<br/>
+    //    		  v0.6.6 Jan 2nd 2014
+    //    		</a>
+    //    	      </p>
+    //    	</div>
+    //          </div>
+              
+      hr.featurette-divider
+      // /END THE FEATURETTES
+      // Friends
+      .row.featurette
+        #tools.col-md-12
+          h1  Tools working friendly with Marboo
+          br
+          ul
+            li
+              a.dropbox(href='https://db.tt/p8LtkZ2', title='Dropbox') Dropbox
+            li
+              a.mou(href='http://mouapp.com/', title='Mou') Mou
+            li
+              a.git(href='http://git-scm.com/', title='Git') Git
+            li
+              a.github(href='https://github.com/', title='GitHub') GitHub
+            li
+              a.macvim(href='http://code.google.com/p/macvim/', title='MacVim') MacVim
+            li
+              a.emacs(href='http://emacsformacosx.com/', title='Emacs for OSX') Emacs
+            li
+              a.totalterminal(href='http://totalterminal.binaryage.com/', title='TotalTerminal') TotalTerminal
+            li
+              a.jekyll(href='http://jekyllrb.com/') Jekyll
+            li
+              a.hexo(href='http://zespia.tw/hexo/') Hexo
+            li
+              a.ghost(href='https://ghost.org/') Ghost
+            li
+              a.atom(href='https://atom.io') Atom
+            li
+              a(href='')
+      hr.featurette-divider
+      // FOOTER
+      footer
+        p.pull-right
+          a(href='#') Back to top
+        p © 2014 Marboo 
+    // /.container
+    //
+    //   Bootstrap core JavaScript
+    // Placed at the end of the document so the pages load faster
+    script(src='https://code.jquery.com/jquery-1.10.2.min.js')
+    script(src='/media/bootstrap/js/bootstrap.min.js')
+    script(src='/media/js/holder.js')
