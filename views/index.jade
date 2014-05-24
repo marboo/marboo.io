@@ -9,7 +9,7 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
     link(rel="shortcut icon" href="/media/ico/favicon.png")
 
     // Bootstrap core CSS
-    link(href="/media/bootstrap/css/bootstrap.css" rel="stylesheet")
+    link(href="/media/css/bootstrap.min.css" rel="stylesheet")
 
     // Just for debugging purposes. Don't actually copy this line!
     //[if lt IE 9]>
@@ -23,8 +23,8 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
     //[endif]
 
     //Custom styles for this template
-    link(href="/media/css/carousel.css" rel="stylesheet")
-    link(href="/media/css/icons.css" rel="stylesheet")
+    link(href="/media/marboo.biz/carousel.css" rel="stylesheet")
+    link(href="/media/marboo.biz/icons.css" rel="stylesheet")
     title=title
     script(src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=993231938" type="text/javascript" charset="utf-8")
     script.
@@ -50,15 +50,15 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
             .navbar-collapse.collapse
               ul.nav.navbar-nav
                 li.active
-                  a(href='#') #home
+                  a(href='#') #{home}
                 li
-                  a(href='/guide') #guide
+                  a(href='/guide') #{guide}
                 li
-                  a(href='/gallery') #gallery
+                  a(href='/gallery') #{gallery}
                 li
-                  a(href='/slides/marboo-intro.remark.md.html') #overview
+                  a(href='/slides/marboo-intro.remark.md.html') #{overview}
                 li
-                  a(href='http://amoblin.marboo.biz/') #blog
+                  a(href='http://amoblin.marboo.biz/') #{blog}
                 li
                   wb:follow-button(uid='1657760362', type='gray_2')
                     span(style='background:url(http://timg.sjs.sinajs.cn/t4/appstyle/widget/images/library/base/loading1.gif) no-repeat;height:18px;padding:0 0 2px 20px;') Loading...
@@ -81,19 +81,19 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
       .row.featurette
         .col-md-12(align='center')
           h2.featurette-heading
-            | #slogon
+            | #{slogon}
             span.text-muted
-          p.lead.text-muted #subSlogon
+          p.lead.text-muted #{subSlogon}
           br
           br
         .col-md-7(align='center')
-          img.featurette-image.img-responsive(src='/media/images/marboo/0.6/marboo-vim-md.png', style='width:80%', alt='Generic placeholder image')
+          img.featurette-image.img-responsive(src='/media/marboo.biz/images/marboo-vim-markdown.png', style='width:80%', alt='Generic placeholder image')
         .col-md-5(align='center')
-          h2.featurette-heading(style='font-size:30px;margin-top:80px; margin-bottom:80px') #downloadTitle
-          a.btn.btn-default.btn-lg(href='download/Marboo_v0.7.dmg', onclick='ga("send", "event", "button", "click", "Marboo_v0.7.dmg", 1);', style='background:#428bca;width:300px')
-            h2(style='font-size:25px; font-weight:300; margin-top:10px; color:white') #download
+          h2.featurette-heading(style='font-size:30px;margin-top:80px; margin-bottom:80px') #{downloadTitle}
+          a.btn.btn-default.btn-lg(href=downloadLink, onclick='ga("send", "event", "button", "click", "Marboo_v0.7.dmg", 1);', style='background:#428bca;width:300px')
+            h2(style='font-size:25px; font-weight:300; margin-top:10px; color:white') #{download}
           br
-          p.text-muted(text-align='center') #date
+          p.text-muted(text-align='center') #{date}
               
     // /.carousel
     //   Marketing messaging and featurettes
@@ -104,99 +104,35 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
       .row
         - each item in coreInfo
           .col-lg-4
-            img(src=src, alt='Generic placeholder image', width='60px', height='60px')
-            h2=title
-            p.text-muted=subtitle
+            img(src=item.src, alt='Generic placeholder image', width='60px', height='60px')
+            h2=item.title
+            p.text-muted=item.subtitle
             p
               a.btn.btn-default(href=link, role='button') View details »
       // /.row
       // START THE FEATURETTES
-      hr.featurette-divider
-      .row.featurette
-        .col-md-7
-          h2.featurette-heading Safe
-          p.lead
-            | All note files is stored in local folder. Without Marboo, accessing the content is available. All Marboo does is responsing your operations with folder.
-        .col-md-5
-          img.featurette-image.img-responsive(src='/media/images/marboo/gifs/marboo-folder.gif', alt='Generic placeholder image')
-      hr.featurette-divider
-      .row.featurette
-        .col-md-5
-          img.featurette-image.img-responsive(src='/media/images/marboo/friends/marboo-with-dropbox.png', alt='Generic placeholder image')
-        .col-md-7
-          h2.featurette-heading
-            | Syncing with your pleasure
-            span.text-muted
-          p.lead Supporting using Dropbox or Git to sync your notes to everywhere.
-      hr.featurette-divider
-      .row.featurette
-        .col-md-7
-          h2.featurette-heading
-            | Custom Note UI is available
-            span.text-muted
-          p.lead  Modify the main CSS file to custom the UI of all notes.
-        .col-md-5
-          img.featurette-image.img-responsive(src='/media/images/marboo/marboo-icon-theme.png', alt='Generic placeholder image')
-      hr.featurette-divider
-      .row.featurette
-        .col-md-5
-          img.featurette-image.img-responsive(src='/media/images/marboo/marboo-icon-open.png', alt='Generic placeholder image')
-        .col-md-7
-          h2.featurette-heading
-            | Sharing notes in local network
-            span.text-muted
-          p.lead
-            | Tell your friends the note link, the one in the same network can view your note.(Close Sharing? Just restart Marboo)
-      hr.featurette-divider
-      .row.featurette
-        .col-md-7
-          h2.featurette-heading
-            | Note, Blog，All in one
-            span.text-muted
-          p.lead
-            | Using Marboo to manage files in Jekyll / Octopress / Hexo / Ghost is a smart choice. Notes, Blogs, they are the same. Post to WordPress / Ghost is available!
-        .col-md-5
-          img.featurette-image.img-responsive(src='/media/images/marboo/friends/marboo-with-jekyll.png', alt='Generic placeholder image')
-      hr.featurette-divider
-      .row.featurette
-        .col-md-5
-          img.featurette-image.img-responsive(src='/media/images/marboo/logos/pygments.png', alt='Generic placeholder image')
-        .col-md-7
-          h2.featurette-heading
-            | Mananging Codes for Coders
-            span.text-muted
-          p.lead
-            a(href='http://pygments.org/') Pygments
-            | inside. All kinds of code files can display with syntax highlight.
-      hr.featurette-divider
-      .row.featurette
-        .col-md-7
-          h2.featurette-heading
-            | Play with GUI and CLI
-            span.text-muted
-          p.lead
-        .col-md-5
-          img.featurette-image.img-responsive(src='/media/images/marboo/gifs/marboo-terminal.gif', alt='Generic placeholder image')
-      hr.featurette-divider
-    //          <div class="row featurette" id="download">
-    //    	<div class="col-md-12">
-    //    	  <h2 class="featurette-heading">更多新特性 <span class="text-muted">即将发布</span><h2>
-    //    	      Marboo
-    //    	      <p style="text-align:center">
-    //    		<a href="http://marboo.googlecode.com/files/Marboo_v0.6.6.dmg" class="btn btn-default btn-lg">
-    //    		  Download Marboo<br/>
-    //    		  v0.6.6 Jan 2nd 2014
-    //    		</a>
-    //    	      </p>
-    //    	</div>
-    //          </div>
-              
+      - each item in features
+        hr.featurette-divider
+        .row.featurette
+          if item.image_left
+            .col-md-5
+              img.featurette-image.img-responsive(src=item.image, alt='Generic placeholder image')
+            .col-md-7
+              h2.featurette-heading=item.title
+                span.text-muted
+              p.lead=item.info
+          else
+            .col-md-7
+              h2.featurette-heading=item.title
+              p.lead=item.info
+            .col-md-5
+              img.featurette-image.img-responsive(src=item.image, alt='Generic placeholder image')
       hr.featurette-divider
       // /END THE FEATURETTES
       // Friends
       .row.featurette
         #tools.col-md-12
-          h1  Tools working friendly with Marboo
+          h1=friends_title
           br
           ul
             li
@@ -212,15 +148,15 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
             li
               a.emacs(href='http://emacsformacosx.com/', title='Emacs for OSX') Emacs
             li
+              a.atom(href='https://atom.io', title="Atom Editor") Atom
+            li
               a.totalterminal(href='http://totalterminal.binaryage.com/', title='TotalTerminal') TotalTerminal
             li
-              a.jekyll(href='http://jekyllrb.com/') Jekyll
+              a.jekyll(href='http://jekyllrb.com/', title="Jekyll Blog") Jekyll
             li
-              a.hexo(href='http://zespia.tw/hexo/') Hexo
+              a.hexo(href='http://zespia.tw/hexo/', title="Hexo Blog") Hexo
             li
-              a.ghost(href='https://ghost.org/') Ghost
-            li
-              a.atom(href='https://atom.io') Atom
+              a.ghost(href='https://ghost.org/', title="Ghost Blog") Ghost
             li
               a(href='')
       hr.featurette-divider

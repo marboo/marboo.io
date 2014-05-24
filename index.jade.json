@@ -5,25 +5,62 @@
     "gallery": "Gallery",
     "overview": "Overview",
     "blog": "Blog",
-    "slogon": "Freedom Writing, Perfect Viewing",
+    "slogon": "Free Writing, Perfect Viewing",
     "subSlogon": "Make your notes beautiful.",
     "downloadTitle": "Marboo for Mac",
     "download": "Download",
     "date": "v0.8 May 25th 2014",
+    "downloadLink": "http://marboo.qiniudn.com/Marboo_v0.8.dmg",
     "coreInfo": [{
-	"src": '/media/images/marboo/icons/editor.png',
+	"src": "/media/marboo.biz/icons/editor.png",
 	"title": "With Your Favorite Text Editor",
 	"subtitle": "Support All Text Editor, such as Mou / Vim / Emacs / Sublime Text, etc.",
 	"link": "/guide/"
     }, {
-	"src": '/media/images/marboo/icons/hash.png',
+	"src": "/media/marboo.biz/icons/hash.png",
 	"title": "Markup Language Support, such as Markdown",
 	"subtitle": "Inside support Markdown、reStructuredText、Org-mode. With custom script it can support all kinds of markup language.",
 	"link": "#"
     }, {
-	"src": '/media/images/marboo/icons/eye.png',
+	"src": "/media/marboo.biz/icons/eye.png",
 	"title": "View Notes Easily",
 	"subtitle": "3-column UI, Viewing Notes, just like reading RSS in Reeder.",
 	"link": "#"
-    }]
+    }],
+    "features": [{
+	"title": "Safe",
+	"info": "All note files is stored in local folder. Without Marboo, accessing the content is available. All Marboo does is responsing your operations with folder.",
+	"image": "/media/marboo.biz/images/marboo-folder.gif"
+    },{
+	"image": "/media/marboo.biz/images/marboo-with-dropbox.png",
+	"title": "Syncing with your pleasure",
+	"info": "Supporting using Dropbox or Git to sync your notes to everywhere.",
+	"image_left": true
+    },{
+	"title": "Custom Note UI is available",
+	"info": "Modify the main CSS file to custom the UI of all notes.",
+	"image": "/media/marboo.biz/images/marboo-icon-theme.png",
+	"image_left": false
+    },{
+	"image": "/media/marboo.biz/images/marboo-icon-open.png",
+	"title": "Sharing notes in local network",
+	"info": "Tell your friends the note link, the one in the same network can view your note.(Close Sharing? Just restart Marboo)",
+	"image_left": true
+    },{
+	"title": "Note, Blog，All in one",
+	"info": "Using Marboo to manage files in Jekyll / Octopress / Hexo / Ghost is a smart choice. Notes, Blogs, they are the same. Post to WordPress / Ghost is available!",
+	"image": "/media/marboo.biz/images/marboo-with-jekyll.png",
+	"image_left": false
+    },{
+	"image": "/media/marboo.biz/logos/pygments.png",
+	"title": "Mananging Codes for Coders",
+	"info": "a(href='http://pygments.org/') Pygments inside. All kinds of code files can display with syntax highlight.",
+	"image_left": true
+    },{
+	"title": "Play with GUI and CLI",
+	"info": "",
+	"image": "/media/marboo.biz/images/marboo-terminal.gif",
+	"image_left": false
+    }],
+    "friends_title": "  Tools working friendly with Marboo"
 }

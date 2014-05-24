@@ -1,0 +1,62 @@
+{
+    "title": "Marboo - 自由书写，极致浏览",
+    "home": "主页",
+    "guide": "用户手册",
+    "gallery": "画廊",
+    "overview": "概览",
+    "blog": "博客",
+    "slogon": "自由书写，极致浏览",
+    "subSlogon": "让您笔下生辉",
+    "downloadTitle": "Marboo Mac客户端",
+    "download": "下载",
+    "date": "v0.8 2014年5月25日",
+    "downloadLink": "http://marboo.qiniudn.com/Marboo_v0.8.dmg",
+    "coreInfo": [{
+	"src": "/media/marboo.biz/icons/editor.png",
+	"title": "自由选择编辑器",
+	"subtitle": "支持 Mou / Vim / Emacs / Atom / Sublime Text 等编辑器。",
+	"link": "/guide/"
+    }, {
+	"src": "/media/marboo.biz/icons/hash.png",
+	"title": "支持Markdown等标记语言",
+	"subtitle": "内置支持Markdown、reStructuredText。通过安装扩展包可以支持Org-mode等任意标记语言。",
+	"link": "#"
+    }, {
+	"src": "/media/marboo.biz/icons/eye.png",
+	"title": "轻松浏览笔记",
+	"subtitle": "三栏式界面浏览笔记，宛若使用Reeder来阅读RSS文章一样。",
+	"link": "#"
+    }],
+    "features": [{
+	"title": "安全<span class=\"text-muted\">所有内容，你来保管</span>",
+	"info": "笔记等文件存储在本地文件(夹)中，离开Marboo，仍然可以继续访问您的所有文件。Marboo只是实时响应您对文件(夹)的操作。",
+	"image": "/media/images/marboo/gifs/marboo-folder.gif"
+    },{
+	"image": "/media/images/marboo/friends/marboo-with-dropbox.png",
+	"title": "随心同步",
+	"info": "支持使用Dropbox或Git来同步文件到不同的PC上。",
+	"image_left": true
+    },{
+	"title": "笔记外观，你来决定",
+	"info": "通过修改CSS文件来定制所有笔记的外观",
+	"image": "/media/images/marboo/marboo-icon-theme.png"
+    },{
+	"image": "/media/images/marboo/marboo-icon-open.png",
+	"title": "小范围内，共享笔记",
+	"info": "把笔记的链接地址告诉你的小伙伴们，同一网段的伙伴就可以点击查看。(想要关闭共享？重启Marboo即可)",
+	"image_left": true
+    },{
+	"title": "笔记、博客，合而为一",
+	"info": "用Marboo来管理Jekyll / Octopress / Hexo / Ghost 的博文是再好不过了。笔记？博客？有必要分那么清吗？发布到WordPress / Ghost 也是极好的。",
+	"image": "/media/images/marboo/friends/marboo-with-jekyll.png"
+    },{
+	"image": "/media/images/marboo/logos/pygments.png",
+	"title": "码农福利，代码管理",
+	"info": "内置<a href='http://pygments.org/'>Pygments</a>，所有的代码文件在Marboo里都语法高亮显示。",
+	"image_left": true
+    },{
+	"title": "GUI和CLI的二重唱",
+	"image": "/media/images/marboo/gifs/marboo-terminal.gif"
+    }],
+    "friends_title": "Marboo友好支持的小伙伴们"
+}
