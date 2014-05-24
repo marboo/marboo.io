@@ -28,35 +28,36 @@
 	"link": "#"
     }],
     "features": [{
-	"title": "安全<span class=\"text-muted\">所有内容，你来保管</span>",
+	"title": "安全",
+	"subtitle": "所有内容，你来保管",
 	"info": "笔记等文件存储在本地文件(夹)中，离开Marboo，仍然可以继续访问您的所有文件。Marboo只是实时响应您对文件(夹)的操作。",
-	"image": "/media/images/marboo/gifs/marboo-folder.gif"
+	"image": "/media/marboo.biz/images/marboo-folder.gif"
     },{
-	"image": "/media/images/marboo/friends/marboo-with-dropbox.png",
+	"image": "/media/marboo.biz/images/marboo-with-dropbox.png",
 	"title": "随心同步",
 	"info": "支持使用Dropbox或Git来同步文件到不同的PC上。",
 	"image_left": true
     },{
 	"title": "笔记外观，你来决定",
 	"info": "通过修改CSS文件来定制所有笔记的外观",
-	"image": "/media/images/marboo/marboo-icon-theme.png"
+	"image": "/media/marboo.biz/images/marboo-icon-theme.png"
     },{
-	"image": "/media/images/marboo/marboo-icon-open.png",
+	"image": "/media/marboo.biz/images/marboo-icon-open.png",
 	"title": "小范围内，共享笔记",
 	"info": "把笔记的链接地址告诉你的小伙伴们，同一网段的伙伴就可以点击查看。(想要关闭共享？重启Marboo即可)",
 	"image_left": true
     },{
 	"title": "笔记、博客，合而为一",
 	"info": "用Marboo来管理Jekyll / Octopress / Hexo / Ghost 的博文是再好不过了。笔记？博客？有必要分那么清吗？发布到WordPress / Ghost 也是极好的。",
-	"image": "/media/images/marboo/friends/marboo-with-jekyll.png"
+	"image": "/media/marboo.biz/images/marboo-with-jekyll.png"
     },{
-	"image": "/media/images/marboo/logos/pygments.png",
+	"image": "/media/marboo.biz/logos/pygments.png",
 	"title": "码农福利，代码管理",
 	"info": "内置<a href='http://pygments.org/'>Pygments</a>，所有的代码文件在Marboo里都语法高亮显示。",
 	"image_left": true
     },{
 	"title": "GUI和CLI的二重唱",
-	"image": "/media/images/marboo/gifs/marboo-terminal.gif"
+	"image": "/media/marboo.biz/images//marboo-terminal.gif"
     }],
     "friends_title": "Marboo友好支持的小伙伴们"
 }
