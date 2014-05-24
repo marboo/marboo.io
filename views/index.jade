@@ -59,18 +59,18 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
                   a(href='/marboo-intro.remark.md.html') #{overview}
                 li
                   a(href='http://amoblin.marboo.biz/') #{blog}
-                li
+                li(style="margin-top:15px")
                   wb:follow-button(uid='1657760362', type='gray_2')
                     span(style='background:url(http://timg.sjs.sinajs.cn/t4/appstyle/widget/images/library/base/loading1.gif) no-repeat;height:18px;padding:0 0 2px 20px;') Loading...
-                li
+                li(style="margin-top:15px")
                   wb:share-button(count='y', type='icon', size='small')
                     iframe(src='http://service.weibo.com/staticjs/weiboshare.html?url=http%3A%2F%2Fhtml2jade.org%2F&type=3&count=1&language=zh_cn&showbutton=1', width='72', height='16', frameborder='0', scrolling='no', marginheight='0')
                 li.dropdown
-                  a.dropdown-toggle(href='#', data-toggle='dropdown') English
+                  a.dropdown-toggle(href=currentTransLink, data-toggle='dropdown') #{currentTrans}
                     b.caret
                   ul.dropdown-menu
                     li
-                      a(href='/zh_CN') 简体中文
+                      a(href=otherTransLink) #{otherTrans}
     //                <li class="divider"></li>
     //                <li class="dropdown-header">Nav header</li>
     //                <li><a href="#">Separated link</a></li>

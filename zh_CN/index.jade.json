@@ -5,6 +5,10 @@
     "gallery": "画廊",
     "overview": "概览",
     "blog": "博客",
+    "currentTrans": "简体中文",
+    "currentTransLink": "/zh_CN/",
+    "otherTrans": "English",
+    "otherTransLink": "/",
     "slogon": "自由书写，极致浏览",
     "subSlogon": "让您笔下生辉",
     "downloadTitle": "Marboo Mac客户端",
@@ -52,8 +56,8 @@
 	"image": "/media/marboo.biz/images/marboo-with-jekyll.png"
     },{
 	"image": "/media/marboo.biz/logos/pygments.png",
-	"title": "码农福利，代码管理",
-	"info": "内置<a href='http://pygments.org/'>Pygments</a>，所有的代码文件在Marboo里都语法高亮显示。",
+	"title": "代码管理，精彩呈现",
+	"info": "内置Pygments，所有的代码文件在Marboo里都会语法高亮显示。",
 	"image_left": true
     },{
 	"title": "GUI和CLI的二重唱",

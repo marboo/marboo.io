@@ -5,6 +5,10 @@
     "gallery": "Gallery",
     "overview": "Overview",
     "blog": "Blog",
+    "currentTrans": "English",
+    "currentTransLink": "#",
+    "otherTrans": "简体中文",
+    "otherTransLink": "/zh_CN/",
     "slogon": "Free Writing, Perfect Viewing",
     "subSlogon": "Make your notes beautiful.",
     "downloadTitle": "Marboo for Mac",
@@ -54,7 +58,7 @@
     },{
 	"image": "/media/marboo.biz/logos/pygments.png",
 	"title": "Mananging Codes for Coders",
-	"info": "a(href='http://pygments.org/') Pygments inside. All kinds of code files can display with syntax highlight.",
+	"info": "Pygments inside. All kinds of code files can display with syntax highlight.",
 	"image_left": true
     },{
 	"title": "Play with GUI and CLI",
