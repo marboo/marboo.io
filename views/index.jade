@@ -52,6 +52,8 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
                 li.active
                   a(href='#') #{home}
                 li
+                  a(href='/packages') #{packages}
+                li
                   a(href='/guide') #{guide}
                 li
                   a(href='/gallery') #{gallery}
@@ -85,7 +87,7 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
           br
           br
         .col-md-7(align='center')
-          img.featurette-image.img-responsive(src='/media/marboo.biz/images/marboo-vim-markdown.png', style='width:80%', alt='Generic placeholder image')
+          img.featurette-image.img-responsive(src='http://medis.qiniudn.com/marboo-vim-markdown.png', style='width:80%', alt='Generic placeholder image')
         .col-md-5(align='center')
           h2.featurette-heading(style='font-size:30px;margin-top:180px; margin-bottom:20px') #{downloadTitle}
           a.btn.btn-default.btn-lg(href=downloadLink, onclick='ga("send", "event", "button", "click", "Marboo_v0.8.dmg", 1);', style='background:#428bca;width:300px')
@@ -136,6 +138,8 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
           ul
             li
               a.dropbox(href='https://db.tt/p8LtkZ2', title='Dropbox') Dropbox
+            li
+              a.btsync(href="http://www.bittorrent.com/sync", title="BitTorrent Sync") BitTorrent Sync
             li
               a.mou(href='http://mouapp.com/', title='Mou') Mou
             li

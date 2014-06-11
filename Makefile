@@ -3,11 +3,12 @@ dest=/tmp/marboo.biz
 default:
 	cp ~/Library/Application\ Support/Marboo/www/misc/marboo-doc/README.rst.html guide/index.html
 	#cp ~/.marboo/build/marboo/install.rst.html install-crx.html
-	jade -O index.jade.json < views/index.jade > index.html
-	jade -O zh_CN/index.jade.json < views/index.jade > zh_CN/index.html
+	jade -O index.jade.json -P < views/index.jade > index.html
+	jade -O zh_CN/index.jade.json -P < views/index.jade > zh_CN/index.html
+	jade -O packages.jade.json -P < views/packages.jade > packages/index.html
 	#find . -name *.jade | xargs jade -P
 	jekyll build -s . -d ${dest}
-	cp -r ../../media/marboo.biz ${dest}/media/
+	#cp -r ../../media/marboo.biz ${dest}/media/
 	cp -r ../../media/css ${dest}/media/
 	#find .|grep index.html | xargs rm -f
 	find /tmp/marboo.biz|grep jade$$ |xargs rm -f
@@ -18,6 +19,7 @@ default:
 	mkdir ${dest}/media/packages
 	cp -r ../../media/packages/markdown ${dest}/media/packages
 	cp ~/Library/Application\ Support/Marboo/www/slides/marboo-intro.remark.md.html ${dest}/marboo-intro.remark.md.html
+	cp .gitignore /tmp/marboo.biz
 clean:
 	find .|grep index.html | xargs rm -f
 
