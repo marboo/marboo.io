@@ -1,5 +1,7 @@
 {
-    "title": "Marboo - Organize Plain Text with Freedom",
+    "title": "Marboo - Managing Markdown files, Writing Markdown Notes, Preview Markdown Files, Markdown Reader, Markdown Viewer",
+    "description": "Marboo是Mac下管理Markdown文件的利器，支持导入Markdown文件夹。支持Markdown，reStructured Text，HTML格式的笔记和文件管理。 支持设置编辑器，比如Emacs、Vim、Atom、Sublime Text等。 Markdown文件支持Latex格式公式、表格、代码高亮显示，支持用remark.js格式制作幻灯片。 支持VexTab格式来制作五线谱。",
+    "keywords": "Markdown, Note, Preview, Reader, Viewer, reStructuredText, MacVim, Emacs, Jekyll, Octopress, Hexo",
     "home": "Home",
     "packages": "Packages",
     "guide": "User Guide",
@@ -33,7 +35,7 @@
 	"link": "#"
     }],
     "features": [{
-	"title": "Safe",
+	"title": "Security",
 	"info": "All note files is stored in local folder. Without Marboo, accessing the content is available. All Marboo does is responsing your operations with folder.",
 	"image": "/media/marboo.biz/images/marboo-folder.gif"
     },{

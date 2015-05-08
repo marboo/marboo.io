@@ -1,8 +1,8 @@
 safe: false
-pygments: true
+highlighter: true
 source: .
 destination: /tmp/marboo.biz
 markdown: redcarpet
 # enable to auto will kill your CPU
 #auto: true
-auto: false
+#auto: false

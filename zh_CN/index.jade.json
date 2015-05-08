@@ -1,5 +1,7 @@
 {
-    "title": "Marboo - 自由书写，极致浏览",
+    "title": "Marboo(码簿笔记) - 管理Markdown等置标语言文件、用Markdown等格式来记笔记、预览Markdown文件，Markdown阅读器",
+    "description": "Marboo（码簿笔记）是Mac下管理Markdown文件的利器，支持导入Markdown文件夹。支持Markdown，reStructured Text，HTML格式的笔记和文件管理。 支持设置编辑器，比如Emacs、Vim、Atom、Sublime Text等。 Markdown文件支持Latex格式公式、表格、代码高亮显示，支持用remark.js格式制作幻灯片。 支持VexTab格式来制作五线谱。",
+    "keywords": "Markdown, 笔记, 预览, 阅读器, MacVim, reStructuredText",
     "home": "主页",
     "packages": "扩展",
     "guide": "用户手册",
@@ -12,7 +14,7 @@
     "otherTransLink": "/",
     "slogon": "自由书写，极致浏览",
     "subSlogon": "让您笔下生辉",
-    "downloadTitle": "Marboo Mac客户端",
+    "downloadTitle": "Marboo(码簿笔记) Mac客户端",
     "download": "下载",
     "date": "v0.8 2014年5月25日",
     "downloadLink": "http://marboo.qiniudn.com/Marboo_v0.8.dmg",
@@ -33,9 +35,9 @@
 	"link": "#"
     }],
     "features": [{
-	"title": "安全",
-	"subtitle": "所有内容，你来保管",
-	"info": "笔记等文件存储在本地文件(夹)中，离开Marboo，仍然可以继续访问您的所有文件。Marboo只是实时响应您对文件(夹)的操作。",
+	"title": "安全，",
+	"subtitle": "本地存储，安全无虞",
+	"info": "笔记等文件存储在本地文件(夹)中，离开码簿笔记，仍然可以继续访问您的所有文件。码簿笔记只是实时响应您对文件(夹)的操作。",
 	"image": "/media/marboo.biz/images/marboo-folder.gif"
     },{
 	"image": "/media/marboo.biz/images/marboo-with-dropbox.png",
@@ -49,20 +51,20 @@
     },{
 	"image": "/media/marboo.biz/images/marboo-icon-open.png",
 	"title": "小范围内，共享笔记",
-	"info": "把笔记的链接地址告诉你的小伙伴们，同一网段的伙伴就可以点击查看。(想要关闭共享？重启Marboo即可)",
+	"info": "把笔记的链接地址告诉你的小伙伴们，同一网段的伙伴就可以点击查看。(想要关闭共享？重启码簿笔记即可)",
 	"image_left": true
     },{
 	"title": "笔记、博客，合而为一",
-	"info": "用Marboo来管理Jekyll / Octopress / Hexo / Ghost 的博文是再好不过了。笔记？博客？有必要分那么清吗？发布到WordPress / Ghost 也是极好的。",
+	"info": "用码簿笔记来管理Jekyll / Octopress / Hexo / Ghost 的博文是再好不过了。笔记？博客？有必要分那么清吗？发布到WordPress / Ghost 也是极好的。",
 	"image": "/media/marboo.biz/images/marboo-with-jekyll.png"
     },{
 	"image": "/media/marboo.biz/logos/pygments.png",
 	"title": "代码管理，精彩呈现",
-	"info": "内置Pygments，所有的代码文件在Marboo里都会语法高亮显示。",
+	"info": "内置Pygments，所有的代码文件在码簿笔记里都会语法高亮显示。",
 	"image_left": true
     },{
 	"title": "GUI和CLI的二重唱",
 	"image": "/media/marboo.biz/images//marboo-terminal.gif"
     }],
-    "friends_title": "Marboo友好支持的小伙伴们"
+    "friends_title": "码簿笔记伴侣"
 }

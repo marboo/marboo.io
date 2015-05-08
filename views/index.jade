@@ -1,15 +1,17 @@
 doctype html
 html(lang="en" xmlns:wb="http://open.weibo.com/wb")
   head
+    title=title
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    meta(name="description" content="")
+    meta(name="description" content=description)
+    meta(name="keywords" content=keywords)
     meta(name="author" content="amoblin")
-    link(rel="shortcut icon" href="/media/ico/favicon.png")
+    link(rel="shortcut icon" href="/.media/marboo.biz/icons/favicon.png")
 
     // Bootstrap core CSS
-    link(href="/media/css/bootstrap.min.css" rel="stylesheet")
+    link(href="/.media/css/bootstrap.min.css" rel="stylesheet")
 
     // Just for debugging purposes. Don't actually copy this line!
     //[if lt IE 9]>
@@ -23,9 +25,9 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
     //[endif]
 
     //Custom styles for this template
-    link(href="/media/marboo.biz/carousel.css" rel="stylesheet")
-    link(href="/media/marboo.biz/icons.css" rel="stylesheet")
-    title=title
+    link(href="/.media/marboo.biz/carousel.css" rel="stylesheet")
+    link(href="/.media/marboo.biz/icons.css" rel="stylesheet")
+    link(href="/.media/marboo.biz/css/main.css" rel="stylesheet")
     script(src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=993231938" type="text/javascript" charset="utf-8")
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -56,7 +58,7 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
                 li
                   a(href='/guide') #{guide}
                 li
-                  a(href='/gallery') #{gallery}
+                  a(href='http://photo.weibo.com/1657760362/albums/detail/album_id/3733933371082949#!/mode/1/page/1') #{gallery}
                 li
                   a(href='/marboo-intro.remark.md.html') #{overview}
                 li
@@ -87,14 +89,16 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
           br
           br
         .col-md-7(align='center')
-          img.featurette-image.img-responsive(src='http://medis.qiniudn.com/marboo-vim-markdown.png', style='width:80%', alt='Generic placeholder image')
+          img.featurette-image.img-responsive(src='http://medis.qiniudn.com/1.png', style='width:80%', alt='Marboo + Mou + Markdown')
         .col-md-5(align='center')
-          h2.featurette-heading(style='font-size:30px;margin-top:180px; margin-bottom:20px') #{downloadTitle}
-          a.btn.btn-default.btn-lg(href=downloadLink, onclick='ga("send", "event", "button", "click", "Marboo_v0.8.dmg", 1);', style='background:#428bca;width:300px')
-            h2(style='font-size:25px; font-weight:300; margin-top:10px; color:white') #{download}
-          br
-          p.text-muted(style='margin-top:10px', text-align='center') #{date}
-              
+          img.featurette-image.img-responsive(src='http://medis.qiniudn.com/marboo.png', style='width:20%;margin-top:100px', alt='Marboo App Icon')
+          h2(style='font-size:30px;margin-bottom:20px') #{downloadTitle}
+          p.appstore
+            a(href="https://itunes.apple.com/us/app/marboo/id880375426?l=zh&ls=1&mt=12" target="_blank")
+              | Download on the Mac App Store
+            span
+              | Requires OS X 10.7 or later
+
     // /.carousel
     //   Marketing messaging and featurettes
     // Wrap the rest of the page in another container to center all the content.
@@ -173,5 +177,5 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
     //   Bootstrap core JavaScript
     // Placed at the end of the document so the pages load faster
     script(src='https://code.jquery.com/jquery-1.10.2.min.js')
-    script(src='/media/marboo.biz/js/bootstrap.min.js')
-    script(src='/media/marboo.biz/js/holder.js')
+    script(src='/.media/marboo.biz/js/bootstrap.min.js')
+    script(src='/.media/marboo.biz/js/holder.js')
