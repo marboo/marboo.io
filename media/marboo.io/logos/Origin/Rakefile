@@ -1,0 +1,17 @@
+#!/usr/bin/env rake -f
+# coding: utf-8
+# file name: Rakefile
+# description: TODO
+# author: amoblin <amoblin@gmail.com>
+# create date: 2015-07-11 23:18:24
+# This file is created by Marboo<http://marboo.io> template file $MARBOO_HOME/.media/starts/Rakefile
+# 本文件由 Marboo<http://marboo.io> 模板文件 $MARBOO_HOME/.media/starts/Rakefile　创建
+
+task :default do |t|
+  require 'Pathname'
+  p = Pathname.new(File.dirname(__FILE__)).realpath
+  #  for file in Dir.entries(p) do
+  for file in Dir["*.png"] do
+    `convert -resize x128 #{file} ../#{file}`
+  end
+end
