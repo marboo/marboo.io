@@ -6,3 +6,4 @@ markdown: redcarpet
 # enable to auto will kill your CPU
 #auto: true
 #auto: false
+include: [.media .nojekyll]
