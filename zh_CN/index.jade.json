@@ -1,5 +1,5 @@
 {
-    "title": "#Marboo#(#码簿笔记#) - 管理Markdown、RST(reStructured Text)、Org-mode等置标语言文件、笔记，无缝整合Sphinx/Jekyll/Octopress等静态博客系统、支持调用外部编辑器、实时预览标记语言文件。@amoblin Mac App Store下载: http://t.cn/RPcyGVw ",
+    "title": "码簿笔记 - 管理Markdown、RST(reStructured Text)、Org-mode等置标语言文件、笔记，无缝整合Sphinx/Jekyll/Octopress等静态博客系统、支持调用外部编辑器、实时预览标记语言文件。@amoblin Mac App Store下载: http://t.cn/RPcyGVw #Marboo#",
     "description": "Marboo是Mac下管理Markdown文件的利器，支持导入Markdown文件夹。支持Markdown、rST(reStructured Text)、Textile、txt2tag等格式的笔记和文件管理。 支持设置编辑器，比如Emacs、Vim、Atom、Sublime Text等，无缝整合静态博客系统如Sphinx/Jekyll/Octopress等。 Markdown文件支持Latex格式公式、表格、代码高亮显示，支持用remark.js格式制作幻灯片。 支持VexTab格式来制作五线谱。",
     "keywords": "Markdown, RST, Org-mode, Sphinx, Jekyll, Octopress, Hexo, Emacs, Mou, MacVim, reStructuredText, 笔记, 预览, 阅读器",
     "home": "主页",

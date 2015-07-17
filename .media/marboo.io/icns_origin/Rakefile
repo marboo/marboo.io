@@ -12,6 +12,6 @@ task :default do |t|
   p = Pathname.new(File.dirname(__FILE__)).realpath
   #  for file in Dir.entries(p) do
   for file in Dir["*.png"] do
-    `convert -resize x128 #{file} ../#{file}`
+    `convert -resize x128 #{file} ../logos/#{file}`
   end
 end
