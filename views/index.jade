@@ -56,11 +56,9 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
                 li
                   a(href='/packages') #{packages}
                 li
-                  a(href='/guide') #{guide}
+                  a(href=guideLink) #{guide}
                 li
                   a(href='http://photo.weibo.com/1657760362/albums/detail/album_id/3733933371082949#!/mode/1/page/1') #{gallery}
-                li
-                  a(href='/marboo-intro.remark.md.html') #{overview}
                 li
                   a(href='http://amoblin.marboo.io/') #{blog}
                 li(style="margin-top:15px")
@@ -88,16 +86,25 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
           p.lead.text-muted=subSlogon
           br
           br
+        .col-md-12(align='center')
+          img.featurette-image.img-responsive(src='http://medis.qiniudn.com/1.jpg', style='width:80%', alt='Marboo Markdown Preview')
         .col-md-7(align='center')
-          img.featurette-image.img-responsive(src='http://medis.qiniudn.com/1.png', style='width:80%', alt='Marboo + Mou + Markdown')
+          img.featurette-image.img-responsive(src='http://medis.qiniudn.com/Marboo-Pro.png', style='width:20%;margin-top:100px', alt='Marboo App Icon')
+          h2(style='font-size:30px;margin-bottom:20px') #{downloadProTitle}
+          h3(style='font-size:20px;margin-bottom:20px') #{downloadProDesc}
+          p.appstore
+            a(href="https://itunes.apple.com/cn/app/marboo-pro/id1010557319?mt=12" target="_blank")
+              | #{downloadProDesc}
+            span
+              | #{requirements}
         .col-md-5(align='center')
           img.featurette-image.img-responsive(src='http://medis.qiniudn.com/marboo.png', style='width:20%;margin-top:100px', alt='Marboo App Icon')
           h2(style='font-size:30px;margin-bottom:20px') #{downloadTitle}
           p.appstore
             a(href="https://itunes.apple.com/us/app/marboo/id880375426?l=zh&ls=1&mt=12" target="_blank")
-              | Download on the Mac App Store
+              | #{downloadDesc}
             span
-              | Requires OS X 10.7 or later
+              | #{requirements}
 
     // /.carousel
     //   Marketing messaging and featurettes
@@ -111,26 +118,26 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
             img(src=item.src, alt='Generic placeholder image', width='60px', height='60px')
             h2=item.title
             p.text-muted=item.subtitle
-            p
-              a.btn.btn-default(href=link, role='button') View details »
+            // p
+              // a.btn.btn-default(href=link, role='button') View details »
       // /.row
       // START THE FEATURETTES
       - each item in features
         hr.featurette-divider
         .row.featurette
           if item.image_left
-            .col-md-5
+            .col-md-8
               img.featurette-image.img-responsive(src=item.image, alt='Generic placeholder image')
-            .col-md-7
+            .col-md-4
               h2.featurette-heading=item.title
                 span.text-muted=item.subtitle
               p.lead=item.info
           else
-            .col-md-7
+            .col-md-4
               h2.featurette-heading=item.title
                 span.text-muted=item.subtitle
               p.lead=item.info
-            .col-md-5
+            .col-md-8
               img.featurette-image.img-responsive(src=item.image, alt='Generic placeholder image')
       hr.featurette-divider
       // /END THE FEATURETTES
@@ -178,6 +185,24 @@ html(lang="en" xmlns:wb="http://open.weibo.com/wb")
               a.ghost(href='https://ghost.org/', title="Ghost Blog") Ghost
             li
               a.gitbook(href='https://www.gitbook.com/', title="GitBook") GitBook
+
+        .col-md-7(align='center')
+          img.featurette-image.img-responsive(src='http://medis.qiniudn.com/Marboo-Pro.png', style='width:20%;margin-top:100px', alt='Marboo App Icon')
+          h2(style='font-size:30px;margin-bottom:20px') #{downloadProTitle}
+          h3(style='font-size:20px;margin-bottom:20px') #{downloadProDesc}
+          p.appstore
+            a(href="https://itunes.apple.com/cn/app/marboo-pro/id1010557319?mt=12" target="_blank")
+              | #{downloadProDesc}
+            span
+              | #{requirements}
+        .col-md-5(align='center')
+          img.featurette-image.img-responsive(src='http://medis.qiniudn.com/marboo.png', style='width:20%;margin-top:100px', alt='Marboo App Icon')
+          h2(style='font-size:30px;margin-bottom:20px') #{downloadTitle}
+          p.appstore
+            a(href="https://itunes.apple.com/us/app/marboo/id880375426?l=zh&ls=1&mt=12" target="_blank")
+              | #{downloadDesc}
+            span
+              | #{requirements}
       hr.featurette-divider
       // FOOTER
       footer

@@ -5,6 +5,7 @@
     "home": "Home",
     "packages": "Packages",
     "guide": "User Guide",
+    "guideLink": "http://amoblin.gitbooks.io/marboo-guide/content/en/index.html",
     "gallery": "Gallery",
     "overview": "Overview",
     "blog": "Blog",
@@ -12,62 +13,66 @@
     "currentTransLink": "#",
     "otherTrans": "简体中文",
     "otherTransLink": "/zh_CN/",
-    "slogon": "Free Writing, Perfect Viewing",
-    "subSlogon": "Make your notes beautiful.",
+    "slogon": "Marboo",
+    "subSlogon": "The Professional Markup Language File Previewer.",
+    "downloadProTitle": "Marboo Pro for Mac",
+    "downloadProDesc": "$6.99 on the Mac App Store",
     "downloadTitle": "Marboo for Mac",
-    "download": "Download",
-    "date": "v0.8 May 25th 2014",
-    "downloadLink": "http://marboo.qiniudn.com/Marboo_v0.8.dmg",
+    "downloadDesc": "Free Download on the Mac App Store",
+    "requirements": "Requires OS X 10.7 or later",
+
     "coreInfo": [{
+	"title": "Multi Markup Languages Supported",
+	"subtitle": "support Markdown、reStructuredText、Org-mode、txt2tag、Textile.",
+	"src": "/.media/marboo.io/icons/hash.png",
+	"link": "#"
+    },{
+	"title": "Custom File Editor Supported",
+	"subtitle": "Support All Text Editor, such as Mou / Vim / Emacs / Atom / Sublime Text, etc.",
 	"src": "/.media/marboo.io/icons/editor.png",
-	"title": "With Your Favorite Text Editor",
-	"subtitle": "Support All Text Editor, such as Mou / Vim / Emacs / Sublime Text, etc.",
 	"link": "/guide/"
     }, {
-	"src": "/.media/marboo.io/icons/hash.png",
-	"title": "Markup Language Support, such as Markdown",
-	"subtitle": "Inside support Markdown、reStructuredText、Org-mode. With custom script it can support all kinds of markup language.",
-	"link": "#"
-    }, {
+	"title": "Preview Immediately",
+	"subtitle": "Once saved in editor, Marboo will update the preview immediately.",
 	"src": "/.media/marboo.io/icons/eye.png",
-	"title": "View Notes Easily",
-	"subtitle": "3-column UI, Viewing Notes, just like reading RSS in Reeder.",
 	"link": "#"
     }],
     "features": [{
+        "title": "markup languages supported",
+        "info": "popular markup langues are supported，such as Markdown、reStructured Text、Org-mode、Textile、txt2tag, etc.",
+	"image_left": true,
+        "image": "/.media/marboo.io/images/marboo-markup-languages.jpg"
+    },{
+        "title": "file editors supported",
+        "info": "all kinds of file editors are supported，such as Vim、Emacs、Atom、Sublime Text、Textmate、Mou、Ulysses, etc.",
+        "image": "/.media/marboo.io/images/marboo-editor.png"
+    },{
+        "title": "Preview in real time",
+        "info": "once file saved，the preview will update immediately.",
+	"image_left": true,
+        "image": "/.media/marboo.io/images/marboo-preview.jpg"
+    },{
+	"title": "Terminal supported",
+        "info": "responsibility for Terminal command，such as create, delete, modified for file and folder.",
+	"image": "/.media/marboo.io/images//marboo-with-terminal.png"
+    },{
+	"title": "Syntax Highlight for code file",
+	"info": "all code file can show syntax highlight by Pygments.",
+	"image_left": true,
+	"image": "/.media/marboo.io/images/marboo-code-highlight.png"
+    },{
+	"title": "Document Systems supported(only supported in Pro version)",
+	"info": "document systems are supported such as GitBook、Sphinx、Jekyll、Octopress、Hexo、Ghost, etc.",
+	"image": "/.media/marboo.io/images/marboo-docs.jpg"
+    },{
+	"title": "Share note in local network",
+	"info": "URL link or QRCode can be genereated for note preview page, which can share to friends in local network.",
+	"image_left": true,
+	"image": "/.media/marboo.io/images/marboo-share.png"
+    },{
 	"title": "Security",
-	"info": "All note files is stored in local folder. Without Marboo, accessing the content is available. All Marboo does is responsing your operations with folder.",
-	"image": "/.media/marboo.io/images/marboo-finder.png"
-    },{
-	"image": "/.media/marboo.io/images/marboo-with-dropbox.png",
-	"title": "Syncing with your pleasure",
-	"info": "Supporting using Dropbox or Git to sync your notes to everywhere.",
-	"image_left": true
-    },{
-	"title": "Custom Note UI is available",
-	"info": "Modify the main CSS file to custom the UI of all notes.",
-	"image": "/.media/marboo.io/images/marboo-custom-css.png",
-	"image_left": false
-    },{
-	"image": "/.media/marboo.io/images/marboo-share.png",
-	"title": "Sharing notes in local network",
-	"info": "Tell your friends the note link, the one in the same network can view your note.(Close Sharing? Just restart Marboo)",
-	"image_left": true
-    },{
-	"title": "Note, Blog，All in one",
-	"info": "Using Marboo to manage files in Jekyll / Octopress / Hexo / Ghost is a smart choice. Notes, Blogs, they are the same. Post to WordPress / Ghost is available!",
-	"image": "/.media/marboo.io/images/marboo-blog.png",
-	"image_left": false
-    },{
-	"image": "/.media/marboo.io/logos/pygments.png",
-	"title": "Mananging Codes for Coders",
-	"info": "Pygments inside. All kinds of code files can display with syntax highlight.",
-	"image_left": true
-    },{
-	"title": "Play with GUI and CLI",
-	"info": "",
-	"image": "/.media/marboo.io/images/marboo-with-terminal.png",
-	"image_left": false
+	"info": "All files are stored in local file system.",
+	"image": "/.media/marboo.io/images/marboo-finder.jpg"
     }],
     "friends_title": "  Tools working friendly with Marboo"
 }

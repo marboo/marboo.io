@@ -4,7 +4,8 @@
     "keywords": "Markdown, RST, Org-mode, Sphinx, Jekyll, Octopress, Hexo, Emacs, Mou, MacVim, reStructuredText, 笔记, 预览, 阅读器",
     "home": "主页",
     "packages": "扩展",
-    "guide": "用户手册",
+    "guide": "用户指南",
+    "guideLink": "http://amoblin.gitbooks.io/marboo-guide/content/zh-cn/index.html",
     "gallery": "画廊",
     "overview": "概览",
     "blog": "博客",
@@ -12,59 +13,65 @@
     "currentTransLink": "/zh_CN/",
     "otherTrans": "English",
     "otherTransLink": "/",
-    "slogon": "自由书写，极致浏览",
-    "subSlogon": "让您笔下生辉",
-    "downloadTitle": "Marboo(码簿笔记) Mac客户端",
-    "download": "下载",
-    "date": "v0.8 2014年5月25日",
-    "downloadLink": "http://marboo.qiniudn.com/Marboo_v0.8.dmg",
+    "slogon": "Marboo笔记",
+    "subSlogon": "专业的轻量级标记语言文本预览器",
+
+    "downloadProTitle": "Marboo Pro Mac客户端",
+    "downloadProDesc": "￥45.00 在Mac App Store购买",
+    "downloadTitle": "Marboo Mac客户端",
+    "downloadDesc": "在Mac App Store免费下载",
+    "requirements": "需要 OS X 10.7 或更新",
     "coreInfo": [{
-	"src": "/.media/marboo.io/icons/editor.png",
-	"title": "自由选择编辑器",
-	"subtitle": "支持 Mou / Vim / Emacs / Atom / Sublime Text 等编辑器。",
-	"link": "/guide/"
-    }, {
-	"src": "/.media/marboo.io/icons/hash.png",
 	"title": "支持Markdown等标记语言",
-	"subtitle": "内置支持Markdown、reStructuredText。通过安装扩展包可以支持Org-mode等任意标记语言。",
+	"subtitle": "内置支持Markdown、reStructuredText、Org-mode、txt2tag、Textile。",
+	"src": "/.media/marboo.io/icons/hash.png",
 	"link": "#"
-    }, {
+    },{
+        "title": "多编辑器支持",
+        "subtitle": "支持常用的文本编辑器，如Vim、Emacs、Atom、Sublime Text、Textmate、Mou、MacDown等。",
+        "src": "/.media/marboo.io/icons/editor.png"
+    },{
+	"title": "实时预览",
+	"subtitle": "编辑器保存内容时，Marboo中就会立刻更新预览效果",
 	"src": "/.media/marboo.io/icons/eye.png",
-	"title": "轻松浏览笔记",
-	"subtitle": "三栏式界面浏览笔记，宛若使用Reeder来阅读RSS文章一样。",
 	"link": "#"
     }],
     "features": [{
-	"title": "安全，",
-	"subtitle": "本地存储，安全无虞",
-	"info": "笔记等文件存储在本地文件(夹)中，离开码簿笔记，仍然可以继续访问您的所有文件。码簿笔记只是实时响应您对文件(夹)的操作。",
-	"image": "/.media/marboo.io/images/marboo-finder.png"
+        "title": "多标记语言支持",
+        "info": "支持各种常用标记语言，如Markdown、reStructured Text、Org-mode、Textile、txt2tag等。",
+	"image_left": true,
+        "image": "/.media/marboo.io/images/marboo-markup-languages.jpg"
     },{
-	"image": "/.media/marboo.io/images/marboo-with-dropbox.png",
-	"title": "随心同步",
-	"info": "支持使用Dropbox或Git来同步文件到不同的PC上。",
-	"image_left": true
+        "title": "多种编辑器支持",
+        "info": "支持各种常用文本编辑器，如Vim、Emacs、Atom、Sublime Text、Textmate、Mou、Ulysses等。",
+        "image": "/.media/marboo.io/images/marboo-editor.png"
     },{
-	"title": "笔记外观，你来决定",
-	"info": "通过修改CSS文件来定制所有笔记的外观",
-	"image": "/.media/marboo.io/images/marboo-custom-css.png"
+        "title": "实时预览",
+        "info": "文件保存后，实时更新，即刻预览",
+	"image_left": true,
+        "image": "/.media/marboo.io/images/marboo-preview.jpg"
     },{
-	"image": "/.media/marboo.io/images/marboo-share.png",
-	"title": "局域网内，共享笔记",
-	"info": "把笔记的链接地址告诉你的小伙伴们，同一网段的伙伴就可以点击查看。(想要关闭共享？重启码簿笔记即可)",
-	"image_left": true
-    },{
-	"title": "笔记、博客，合而为一",
-	"info": "用码簿笔记来管理Jekyll / Octopress / Hexo / Ghost 的博文是再好不过了。笔记？博客？有必要分那么清吗？发布到WordPress / Ghost 也是极好的。",
-	"image": "/.media/marboo.io/images/marboo-blog.png"
-    },{
-	"image": "/.media/marboo.io/logos/pygments.png",
-	"title": "代码管理，精彩呈现",
-	"info": "内置Pygments，所有的代码文件在码簿笔记里都会语法高亮显示。",
-	"image_left": true
-    },{
-	"title": "GUI和CLI的二重唱",
+	"title": "支持Terminal",
+        "info": "能够实时响应在Terminal中的各种操作，如文件和目录的增删改等。",
 	"image": "/.media/marboo.io/images//marboo-with-terminal.png"
+    },{
+	"title": "代码美观展现",
+	"info": "内置Pygments，所有的代码文件在码簿笔记里都会语法高亮显示。",
+	"image_left": true,
+	"image": "/.media/marboo.io/images/marboo-code-highlight.png"
+    },{
+	"title": "多种文档系统支持(只有Pro版才支持)",
+	"info": "支持常见的文档系统如GitBook、Sphinx、Jekyll、Octopress、Hexo、Ghost 等。",
+	"image": "/.media/marboo.io/images/marboo-docs.jpg"
+    },{
+	"title": "支持局域网共享笔记",
+	"info": "支持将笔记展示页面生成URL链接或二维码，可分享给局域网内的小伙伴们",
+	"image_left": true,
+	"image": "/.media/marboo.io/images/marboo-share.png"
+    },{
+	"title": "保障数据隐私安全",
+	"info": "所有笔记均存储在本地文件夹中，支持通过Finder访问查看。",
+	"image": "/.media/marboo.io/images/marboo-finder.jpg"
     }],
     "friends_title": "码簿笔记伴侣"
 }
